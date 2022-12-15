@@ -2,37 +2,43 @@
 	text-align: center;
 }
 
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
+.app-title {
+	margin: 3rem 2rem;
+	font-size: 5rem;
+	color: #0cead0;
+	font-family: 'Rock Salt', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 5s alternate;
-	}
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
+.card-lists {
+	padding-left: 0;
+	list-style: none;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
-.App-link {
-	color: #61dafb;
+.card-list {
+	background-color: rgba(4, 107, 135, 0.868);
+	color: #fff;
+	padding: 1rem;
+	width: 18rem;
+	transition: all 0.3s;
 }
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg) translateX(10px);
-	}
-	to {
-		transform: rotate(180deg) translateX(0px);
-	}
+.card-list:hover {
+	transform: scale(1.05);
+}
+
+.search-box {
+	padding: 0.5rem;
+	border: none;
+	border-radius: 5px;
+	color: rgb(14, 88, 77);
+	font-size: 1rem;
+}
+
+.search-box:focus {
+	outline: 3px solid rgb(14, 88, 77);
 }
