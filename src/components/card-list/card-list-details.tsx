@@ -1,4 +1,6 @@
-const CardListDetails = ({ id, name, email }) => {
+import { Monster } from '../../App';
+
+const CardListDetails = ({ id, name, email }: Monster) => {
 	return (
 		<li className="card-list" key={id}>
 			<img

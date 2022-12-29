@@ -1,6 +1,7 @@
 import CardListDetails from './card-list-details';
+import { Monster } from '../../App';
 
-const CardList = ({ monsters }) => {
+const CardList = ({ monsters }: { monsters: Monster[] }) => {
 	return (
 		<ul className="card-lists">
 			{monsters.map((m) => (
